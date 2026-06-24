@@ -24,12 +24,12 @@ import { useAuthStore } from '@/stores/authStore'
 
 const NAV_ITEMS = [
   { to: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
-  { to: '/transactions', label: 'Transactions', icon: ArrowRightLeft },
-  { to: '/reconciliation', label: 'Reconciliation', icon: GitCompare },
-  { to: '/documents', label: 'Documents', icon: FileText },
-  { to: '/reports', label: 'Reports', icon: BarChart3 },
-  { to: '/cash-flow', label: 'Cash Flow', icon: TrendingUp },
-  { to: '/settings', label: 'Settings', icon: Settings },
+  { to: '/dashboard/transactions', label: 'Transactions', icon: ArrowRightLeft },
+  { to: '/dashboard/reconciliation', label: 'Reconciliation', icon: GitCompare },
+  { to: '/dashboard/documents', label: 'Documents', icon: FileText },
+  { to: '/dashboard/reports', label: 'Reports', icon: BarChart3 },
+  { to: '/dashboard/cash-flow', label: 'Cash Flow', icon: TrendingUp },
+  { to: '/dashboard/settings', label: 'Settings', icon: Settings },
 ]
 
 function getInitials(name: string): string {

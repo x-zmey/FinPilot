@@ -243,7 +243,7 @@ export default function DashboardPage() {
         <Card className="xl:col-span-2">
           <CardHeader className="pb-3 flex flex-row items-center justify-between">
             <CardTitle className="text-base font-semibold text-gray-800">Recent Transactions</CardTitle>
-            <Button variant="ghost" size="sm" className="text-emerald-600 hover:text-emerald-700 text-xs" onClick={() => navigate('/transactions')}>
+            <Button variant="ghost" size="sm" className="text-emerald-600 hover:text-emerald-700 text-xs" onClick={() => navigate('/dashboard/transactions')}>
               View all
             </Button>
           </CardHeader>
@@ -304,10 +304,10 @@ export default function DashboardPage() {
           </CardHeader>
           <CardContent className="pt-0 space-y-2.5">
             {[
-              { label: 'Upload Document', icon: Upload, to: '/documents', color: 'bg-blue-50 text-blue-700 hover:bg-blue-100' },
-              { label: 'Add Transaction', icon: Plus, to: '/transactions', color: 'bg-emerald-50 text-emerald-700 hover:bg-emerald-100' },
-              { label: 'Run Reconciliation', icon: GitCompare, to: '/reconciliation', color: 'bg-amber-50 text-amber-700 hover:bg-amber-100' },
-              { label: 'Generate Report', icon: BarChart3, to: '/reports', color: 'bg-purple-50 text-purple-700 hover:bg-purple-100' },
+              { label: 'Upload Document', icon: Upload, to: '/dashboard/documents', color: 'bg-blue-50 text-blue-700 hover:bg-blue-100' },
+              { label: 'Add Transaction', icon: Plus, to: '/dashboard/transactions', color: 'bg-emerald-50 text-emerald-700 hover:bg-emerald-100' },
+              { label: 'Run Reconciliation', icon: GitCompare, to: '/dashboard/reconciliation', color: 'bg-amber-50 text-amber-700 hover:bg-amber-100' },
+              { label: 'Generate Report', icon: BarChart3, to: '/dashboard/reports', color: 'bg-purple-50 text-purple-700 hover:bg-purple-100' },
             ].map(({ label, icon: Icon, to, color }) => (
               <button
                 key={label}
